@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+  font-size: 62.5%;
+  --primary-color: #483d8b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.index {
+  max-width: 60rem;
+  background-color: var(--primary-color);
+  color: white;
+  margin: 3.2rem auto;
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 8px 8px black;
+}
+
+.index h1 {
+  font-size: 5.2rem;
+  padding-bottom: 4rem;
+}
+
+.search-container {
+  display: flex;
+  margin-bottom: 1.8rem;
+}
+
+.outline {
+  border: 1px solid black;
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.search-icon {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 0.3rem 0rem 0.8rem;
+  border-radius: 2rem 0 0 2rem;
+}
+
+#search-bar {
+  max-width: 500rem;
+  outline: 0;
+  border: 0;
+  width: 35rem;
+  padding: 1.6rem 1.6rem 1.6rem 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  border-radius: 0 2rem 2rem 0;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 2rem;
+}
+
+a {
+  font-size: 2.2rem;
+  text-decoration: none;
+  color: #fff;
+  transition: all 150ms ease;
+}
+
+a:hover {
+  color: #1c1836;
+}
+
+.todos-container {
+  max-width: 90rem;
+  margin: 5rem auto;
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+  gap: 4rem;
+  border-radius: 0.8rem;
+  box-shadow: 8px 8px black;
+}
+
+.todo-container {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 0.8rem;
+  padding: 2rem;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+
+.todo-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.todo-options {
+  display: flex;
+  gap: 1rem;
+}
+
+.todo-options button {
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  opacity: 0.8;
+  cursor: pointer;
+  max-height: 3.8rem;
+  transition: all 150ms;
+}
+
+.todo-options button:hover {
+  opacity: 1;
+}
+
+.create-todo {
+  max-width: 90rem;
+  margin: 5rem auto;
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--primary-color);
+  border-radius: 0.8rem;
+  box-shadow: 8px 8px black;
+  font-size: 1.8rem;
+}
+
+.create-todo textarea {
+  resize: none;
+  outline: 0;
+  padding: 0.3rem;
+  height: 6rem;
+  border-radius: 0.8rem;
+}
+
+.todo-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.todo-title input {
+  max-width: 50rem;
+  padding: 0.5rem;
+  outline: 0;
+  border-radius: 0.8rem;
+  border: 0;
+}
+
+.todo-description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.create-container-options {
+  display: flex;
+  gap: 2rem;
+}
+
+.create-container-options a {
+  text-decoration: none;
+}
+
+.create-task {
+  width: 100%;
+}
+
+.create-task form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.task-create-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+}
+
+.task-create-container input {
+  max-width: 30rem;
+  padding: 0.5rem;
+  outline: 0;
+  border: 0;
+  border-radius: 0.8rem;
+}
+
+#submit-btn {
+  max-width: 10rem;
+  height: 3rem;
+  font-weight: bold;
+  background-color: rgb(96, 221, 96);
+  cursor: pointer;
+  border-radius: 0.8rem;
+  opacity: 0.8;
+  transition: 150ms all ease;
+}
+
+#submit-btn:hover {
+  opacity: 1;
+}
+
+button.del {
+  background-color: rgb(255, 46, 46);
+}
+
+button.check {
+  background-color: rgb(96, 221, 96);
+}
+
+button.edit {
+  background-color: #fff;
+}

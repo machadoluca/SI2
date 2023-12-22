@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>movieFind</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <div class="index">
+          <h1>movie<strong class="title-dec red">Find</strong></h1>
+          <p>
+            encontre seus
+            <strong class="p-index-dec red">filmes</strong> e
+            <strong class="p-index-dec red">séries</strong> favoritos
+          </p>
+        </div>
+        <div class="search-box">
+          <input type="text" id="search-bar" />
+          <button id="search" onclick="search()">
+            <img src="assets/search.svg" alt="search-icon" />
+          </button>
+        </div>
+      </header>
+      <main>
+        <div class="results disabled"></div>
+        <div class="pagination"></div>
+      </main>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

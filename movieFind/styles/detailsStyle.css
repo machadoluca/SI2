@@ -1,0 +1,58 @@
+:root {
+  font-size: 62.5%;
+  --primary-color: #d31900;
+  --second-color: #fa2121;
+  --background-color: #000000e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: 'Fjalla one', 'sans-serif';
+  background-color: var(--background-color);
+  height: 100vh;
+  font-size: 2.6rem;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+.app {
+  padding: 10rem;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-container {
+  min-width: 40rem;
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.plot {
+  line-height: 170%;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+img {
+  width: 100%;
+  border-radius: 0.8rem;
+  object-fit: cover;
+}
